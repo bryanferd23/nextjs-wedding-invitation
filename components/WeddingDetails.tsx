@@ -36,23 +36,17 @@ export default function WeddingDetails() {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center h-96 bg-background-light/70 dark:bg-background-dark/70 rounded-lg border-4 border-white dark:border-background-dark shadow-lg">
-            <div className="text-center space-y-4">
-              <p className="text-lg font-semibold text-text-light dark:text-text-dark">{WEDDING_CONFIG.venue.ceremony.name}</p>
-              <p className="text-text-light/70 dark:text-text-dark/70">{WEDDING_CONFIG.venue.ceremony.address}</p>
-              <a
-                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(WEDDING_CONFIG.venue.ceremony.locationQuery)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-md transition-colors"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                View on Google Maps
-              </a>
-            </div>
+          <div className="rounded-lg overflow-hidden border-4 border-white dark:border-background-dark shadow-lg h-96">
+            <iframe
+              title="Wedding Venue Location - Napa Valley, CA"
+              allowFullScreen
+              height="100%"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              src={`https://maps.google.com/maps?q=Napa%20Valley%2C%20CA&t=&z=13&ie=UTF8&iwloc=&output=embed`}
+              style={{ border: 0 }}
+              width="100%"
+            ></iframe>
           </div>
         </div>
       </div>
