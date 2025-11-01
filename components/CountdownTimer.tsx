@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { WEDDING_CONFIG } from '@/lib/config';
 
 interface TimeLeft {
   days: number;
@@ -18,7 +19,7 @@ export default function CountdownTimer() {
   });
 
   useEffect(() => {
-    const targetDate = new Date('2026-10-26T00:00:00').getTime();
+    const targetDate = new Date(`${WEDDING_CONFIG.date}T00:00:00`).getTime();
 
     const calculateTimeLeft = () => {
       const now = new Date().getTime();

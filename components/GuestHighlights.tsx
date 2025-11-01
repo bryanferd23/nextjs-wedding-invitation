@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function GuestHighlights() {
   const guests = [
     {
@@ -28,10 +30,12 @@ export default function GuestHighlights() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 px-4">
         {guests.map((guest, index) => (
           <div key={index} className="text-center space-y-2">
-            <img
+            <Image
               className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-secondary"
               alt={`Portrait of ${guest.name}`}
               src={guest.image}
+              width={128}
+              height={128}
             />
             <h3 className="text-lg font-bold">{guest.name}</h3>
             <p className="text-sm text-gray-500 dark:text-gray-400">{guest.role}</p>

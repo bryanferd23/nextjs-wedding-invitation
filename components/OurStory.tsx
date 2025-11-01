@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function OurStory() {
   return (
@@ -35,10 +36,12 @@ export default function OurStory() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="pt-10"
         >
-          <img
+          <Image
             className="rounded-lg object-cover w-full h-48"
             alt="A cozy coffee shop interior."
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTkg59haVktSqPZctwC_k3NdihplBYZo6TaQXrX_TbHbix0kVQRyLtLgRB7Dz8WBtajQNReI7b94ZwwPJdV8RsBIAm8s92PffAWbD11ROYD_pCqev9TDiusdf4B9CVSvP1Eyl5v60H9oa2-6L4999MYjavzgABkXEAKKCOYIsO3Q0ADYfXdZY0W_Yge3aPXhC5Lr6D_2RANuw4oF5pmWT0s_5IcRnHwtxR30nEAY8LV1HeA730wAjlRMZQkKLd27A3rDWGjo-EC-8"
+            width={800}
+            height={192}
           />
         </motion.div>
 
@@ -49,10 +52,12 @@ export default function OurStory() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="pt-10"
         >
-          <img
+          <Image
             className="rounded-lg object-cover w-full h-48"
             alt="A photo of moving boxes in an empty apartment."
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6wXuIumBmIrVtsDJIHVZiEUSd5r612OrbPvc51gD9naU7B7IdKdIX3nJCId7S0zEENaAfHs_x4RR02PE72fIb7Tz68POurZFjncYx0NT9xvFVJY66_z5g0cC74FCTLoN6q1VKVFknvr4mhmC4DDlgcm-n06-y7PRE-kH8tQp3VY9rxJ5Tjq2QkyswMvDr8d3cqSwyYH2wDQ1obzWOWr7gm0tuQUdZZSFZ1EN8K8wIAIA4mhFvxaNkUq0mZnHg1rcdqJN1n-BYkVI"
+            width={800}
+            height={192}
           />
         </motion.div>
         <div className="flex flex-col items-center gap-1 h-full">
@@ -105,10 +110,12 @@ export default function OurStory() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="pt-10"
         >
-          <img
+          <Image
             className="rounded-lg object-cover w-full h-48"
             alt="A close-up of an engagement ring on a finger."
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvoE7fhonVsTNcmnaq5dCkism6XElCd4KgnHQ_clk7_KZuh940Y-u0v10A86tonNMxAFWxQalZpPJ1UCzW5-DNChJG2B7u4M1n6DGhTBeoDvOrGuXoAOef_ImdSRbPvG1JqTM-eGQrYLaSeifvpClrkeLN00l8hTVtvTyrGTgj6ROvwO9YBfWkUjtg2Ytnbj_DUxMYZDYLomhmL5z0VCeTaDizB7309VY2hK3ySUGsQNeUjtGSGCHiyxXIg9VHXVbqqLBz3gZji_M"
+            width={800}
+            height={192}
           />
         </motion.div>
       </div>

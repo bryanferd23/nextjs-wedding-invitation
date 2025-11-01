@@ -2,8 +2,14 @@
 
 import { useState } from 'react';
 
+interface FormData {
+  name: string;
+  rsvp: 'yes' | 'no' | '';
+  meal: string;
+}
+
 export default function RSVPForm() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: '',
     rsvp: '',
     meal: '',
